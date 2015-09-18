@@ -24,8 +24,8 @@ h3 {
     width: 30em;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-animation: type 5s steps(60, end);
-    animation: type 5s steps(60, end);
+    -webkit-animation: data 5s steps(60, end);
+    animation: data 5s steps(60, end);
 }
 
 .bae {
@@ -34,15 +34,15 @@ h3 {
     width: 30em;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-animation: type 4s steps(60, end);
-    animation: type 4s steps(60, end);
+    -webkit-animation: bae 5s;
+    animation: bae 5s;
 }
 
 .bae h2 {
     font-weight: 300;
 }
 
-@keyframes type {
+@keyframes data {
     from {
         width: 0;
     }
@@ -51,11 +51,29 @@ h3 {
     }
 }
 
-@-webkit-keyframes type {
+@-webkit-keyframes data {
     from {
         width: 0;
     }
     to {
         width: 500px;
+    }
+}
+
+@keyframes bae {
+    from {
+        height: 0;
+    }
+    to {
+        height: 64px;
+    }
+}
+
+@-webkit-keyframes bae {
+    from {
+        height: 0;
+    }
+    to {
+        height: 64px;
     }
 }
